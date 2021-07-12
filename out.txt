@@ -1,0 +1,129 @@
+==================== GENERATION 1 ====================
+================ PushdownAutomata 0 =================
+Stepping:
+Version:  _0
+State:  q0
+Stack:  ['$']
+Input: Char: a | String: abcd
+Next States:
+Input: a Pop: ε Push: a  ==> State: q0 Input: bcd Stack: ['a', '$']
+Input:  Pop: ε Push: ε  ==> State: q1 Input: abcd Stack: ['$']
+==================== GENERATION 2 ====================
+================ PushdownAutomata 0 =================
+Stepping:
+Version:  _1A_0
+State:  q0
+Stack:  ['a', '$']
+Input: Char: b | String: bcd
+Next States:
+Input:  Pop: ε Push: ε  ==> State: q1 Input: bcd Stack: ['a', '$']
+================ PushdownAutomata 1 =================
+Stepping:
+Version:  _1B_0
+State:  q1
+Stack:  ['$']
+Input: Char: a | String: abcd
+Next States:
+Input:  Pop: ε Push: ε  ==> State: q2 Input: abcd Stack: ['$']
+==================== GENERATION 3 ====================
+================ PushdownAutomata 0 =================
+Stepping:
+Version:  _1A_1
+State:  q1
+Stack:  ['a', '$']
+Input: Char: b | String: bcd
+Next States:
+Input: b Pop: ε Push: b  ==> State: q1 Input: cd Stack: ['b', 'a', '$']
+Input:  Pop: ε Push: ε  ==> State: q2 Input: bcd Stack: ['a', '$']
+================ PushdownAutomata 1 =================
+Stepping:
+Version:  _1B_1
+State:  q2
+Stack:  ['$']
+Input: Char: a | String: abcd
+Next States:
+Input:  Pop: ε Push: ε  ==> State: q3 Input: abcd Stack: ['$']
+==================== GENERATION 4 ====================
+================ PushdownAutomata 0 =================
+Stepping:
+Version:  _1A_2A_0
+State:  q1
+Stack:  ['b', 'a', '$']
+Input: Char: c | String: cd
+Next States:
+Input:  Pop: ε Push: ε  ==> State: q2 Input: cd Stack: ['b', 'a', '$']
+================ PushdownAutomata 1 =================
+Stepping:
+Version:  _1A_2B_0
+State:  q2
+Stack:  ['a', '$']
+Input: Char: b | String: bcd
+Next States:
+Input:  Pop: ε Push: ε  ==> State: q3 Input: bcd Stack: ['a', '$']
+================ PushdownAutomata 2 =================
+Stepping:
+Version:  _1B_2
+State:  q3
+Stack:  ['$']
+Input: Char: a | String: abcd
+Next States:
+Input:  Pop: ε Push: ε  ==> State: q3 Input: abcd Stack: ['$']
+==================== GENERATION 5 ====================
+================ PushdownAutomata 0 =================
+Stepping:
+Version:  _1A_2A_1
+State:  q2
+Stack:  ['b', 'a', '$']
+Input: Char: c | String: cd
+Next States:
+Input: c Pop: b Push: ε  ==> State: q2 Input: d Stack: ['a', '$']
+Input:  Pop: ε Push: ε  ==> State: q3 Input: cd Stack: ['b', 'a', '$']
+================ PushdownAutomata 1 =================
+Stepping:
+Version:  _1A_2B_1
+State:  q3
+Stack:  ['a', '$']
+Input: Char: b | String: bcd
+Next States:
+Input:  Pop: ε Push: ε  ==> State: q3 Input: bcd Stack: ['a', '$']
+==================== GENERATION 6 ====================
+================ PushdownAutomata 0 =================
+Stepping:
+Version:  _1A_2A_2A_0
+State:  q2
+Stack:  ['a', '$']
+Input: Char: d | String: d
+Next States:
+Input:  Pop: ε Push: ε  ==> State: q3 Input: d Stack: ['a', '$']
+================ PushdownAutomata 1 =================
+Stepping:
+Version:  _1A_2A_2B_0
+State:  q3
+Stack:  ['b', 'a', '$']
+Input: Char: c | String: cd
+Next States:
+Input:  Pop: ε Push: ε  ==> State: q3 Input: cd Stack: ['b', 'a', '$']
+==================== GENERATION 7 ====================
+================ PushdownAutomata 0 =================
+Stepping:
+Version:  _1A_2A_2A_1
+State:  q3
+Stack:  ['a', '$']
+Input: Char: d | String: d
+Next States:
+Input: d Pop: a Push: ε  ==> State: q3 Input:  Stack: ['$']
+Input:  Pop: ε Push: ε  ==> State: q3 Input: d Stack: ['a', '$']
+==================== GENERATION 8 ====================
+================ PushdownAutomata 0 =================
+Stepping:
+Version:  _1A_2A_2A_2A_0
+State:  q3
+Stack:  ['$']
+Input: Char:  | String: 
+Next States:
+Input:  Pop: ε Push: ε  ==> State: q3 Input:  Stack: ['$']
+Input:  Pop: $ Push: ε  ==> State: q4 Input:  Stack: []
+==================== GENERATION 9 ====================
+================ PushdownAutomata 0 =================
+String recognized: abcd q4
+Generating graph graph.gif
